@@ -5,4 +5,17 @@ spring:
   application:
     name: billing-service
   config:
-    import: 'optional:consul:'
+    import: 'optional:consul:, optional:vault://'
+  cloud:
+    vault:
+      token: hvs.hsDJjnKrso2lurceApyNj92K
+      scheme: http
+      kv:
+        enabled: true # true by default
+
+# For Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
