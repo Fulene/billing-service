@@ -6,6 +6,3 @@ spring:
     name: billing-service
   config:
     import: 'optional:consul:'
-
-params:
-  x: "mon X"
