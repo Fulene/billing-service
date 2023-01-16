@@ -12,5 +12,7 @@ public class ConsulConfig {
 
     private long accessTokenTimeout;
     private long refreshTokenTimeout;
+    private String secret1;
+    private String secret2;
 
 }
